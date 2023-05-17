@@ -187,6 +187,8 @@ github.com/containerd/go-runc v0.0.0-20190911050354-e029b79d8cda/go.mod h1:IV7qH
 github.com/containerd/go-runc v0.0.0-20200220073739-7016d3ce2328/go.mod h1:PpyHrqVs8FTi9vpyHwPwiNEGaACDxT/N/pLcvMSRA9g=
 github.com/containerd/go-runc v1.0.0 h1:oU+lLv1ULm5taqgV/CJivypVODI4SUz1znWjv3nNYS0=
 github.com/containerd/go-runc v1.0.0/go.mod h1:cNU0ZbCgCQVZK4lgG3P+9tn9/PaJNmoDXPpoJhDR+Ok=
+github.com/containerd/go-runc v1.1.0 h1:OX4f+/i2y5sUT7LhmcJH7GYrjjhHa1QI4e8yO0gGleA=
+github.com/containerd/go-runc v1.1.0/go.mod h1:xJv2hFF7GvHtTJd9JqTS2UVxMkULUYw4JN5XAUZqH5U=
 github.com/containerd/imgcrypt v1.0.1/go.mod h1:mdd8cEPW7TPgNG4FpuP3sGBiQ7Yi/zak9TYCG3juvb0=
 github.com/containerd/imgcrypt v1.0.4-0.20210301171431-0ae5c75f59ba/go.mod h1:6TNsg0ctmizkrOgXRNQjAPFWpMYRWuiB6dSF4Pfa5SA=
 github.com/containerd/imgcrypt v1.1.8 h1:ZS7TuywcRNLoHpU0g+v4/PsKynl6TYlw5xDVWWoIyFA=
