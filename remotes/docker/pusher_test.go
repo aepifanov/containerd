@@ -30,9 +30,9 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/content"
-	"github.com/containerd/containerd/errdefs"
 	"github.com/containerd/containerd/reference"
 	"github.com/containerd/containerd/remotes"
+	"github.com/containerd/errdefs"
 	"github.com/containerd/log/logtest"
 	"github.com/opencontainers/go-digest"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
@@ -107,7 +107,7 @@ func TestPusherHTTPFallback(t *testing.T) {
 	if client.Transport == nil {
 		client.Transport = http.DefaultTransport
 	}
-	client.Transport = HTTPFallback{client.Transport}
+	client.Transport = NewHTTPFallback(client.Transport)
 	p.hosts[0].Client = client
 	phost := p.hosts[0].Host
 	p.hosts[0].Authorizer = NewDockerAuthorizer(WithAuthCreds(func(host string) (string, string, error) {

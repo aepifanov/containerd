@@ -13,7 +13,7 @@ on:
 name: Containerd Release
 
 env:
-  GO_VERSION: "1.21.8"
+  GO_VERSION: "1.21.10"
 
 permissions:  # added using https://github.com/step-security/secure-workflows
   contents: read
@@ -147,7 +147,7 @@ jobs:
         with:
           path: builds
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_unmatched_files: true
@@ -157,3 +157,4 @@ jobs:
           body_path: ./builds/containerd-release-notes/release-notes.md
           files: |
             builds/release-tars-**/*
+          make_latest: false
